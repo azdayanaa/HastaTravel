@@ -136,8 +136,6 @@ Route::middleware(['auth:customer'])->group(function () {
     Route::get('/profile/edit', [CustomerProfileController::class, 'edit'])->name('customer.profile.edit');
     Route::put('/profile', [CustomerProfileController::class, 'update'])->name('customer.profile.update');
     
-    // Rewards
-    Route::get('/customer/reward', [CustomerController::class, 'rewards'])->name('customer.reward');
 });
 
 // Vehicles (accessible to all)
